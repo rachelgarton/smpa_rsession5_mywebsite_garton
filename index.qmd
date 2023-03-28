@@ -12,7 +12,7 @@ about:
       href: https://github.com/amkessler
 ---
 
-Hi, I'm Aaron and I'm a reporter at the AP in Washington, DC. I like data, the ocean and F1 racing. I've got two little ones and enjoy watching them grow up.
+Hi, I'm Aaron and I'm a journalist at the AP in Washington, DC. I like data, the ocean and F1 racing. I've got two little ones and enjoy watching them grow up.
 
 ## Education
 
