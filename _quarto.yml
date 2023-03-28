@@ -4,7 +4,7 @@ project:
 
 website:
   page-footer: 
-    left: "Copyright 2022, Testy R. Testman" 
+    left: "Copyright 2023, Aaron Kessler" 
     right: 
       - icon: github
         href: https://github.com/
@@ -12,7 +12,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: MyHome
       - about.qmd
       - portfolio.qmd
       - walkthrough.qmd
