@@ -2,6 +2,14 @@
 title: "Portfolio"
 ---
 
-Hi there this is my portfolio page! Yay...
-  
-Here's another line for good measure.
+Hi there this is my portfolio page!
+
+## Voting Rights Story
+
+This [story](https://apnews.com/) from the Associated Press dealt with voting rights issues in Texas in the wake of laws designed to make voting access more difficult.
+
+[![](https://storage.googleapis.com/afs-prod/media/76b879c7c4d74d46bfc10fa38564184b/1000.webp){fig-alt="This is showing a test image of nothing related to this actual story"}](https://apnews.com/)
+
+## Election Night Coverage
+
+Here is a story that [captured the moment of victory](https://apnews.com/) for candidate TKTK in the 2022 general election.

@@ -32,7 +32,21 @@
     "href": "portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Hi there this is my portfolio page! Yay…\nHere’s another line for good measure."
+    "text": "Hi there this is my portfolio page!"
+  },
+  {
+    "objectID": "portfolio.html#voting-rights-story",
+    "href": "portfolio.html#voting-rights-story",
+    "title": "Portfolio",
+    "section": "Voting Rights Story",
+    "text": "Voting Rights Story\nThis story from the Associated Press dealt with voting rights issues in Texas in the wake of laws designed to make voting access more difficult."
+  },
+  {
+    "objectID": "portfolio.html#election-night-coverage",
+    "href": "portfolio.html#election-night-coverage",
+    "title": "Portfolio",
+    "section": "Election Night Coverage",
+    "text": "Election Night Coverage\nHere is a story that captured the moment of victory for candidate TKTK in the 2022 general election."
   },
   {
     "objectID": "about.html",
