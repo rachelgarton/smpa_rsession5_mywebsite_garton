@@ -4,11 +4,11 @@ project:
 
 website:
   page-footer: 
-    left: "Copyright 2023, Aaron Kessler" 
+    left: "Copyright 2023, Rachel Garton" 
     right: 
       - icon: github
-        href: https://github.com/
-  title: "Aaron's Website"
+        href: https://github.com/rachelgarton
+  title: "Rachel's Website"
   navbar:
     left:
       - href: index.qmd

@@ -1,31 +1,27 @@
 ---
-title: "Aaron M. Kessler"
+title: "Rachel H. Garton"
 about:
   template: jolla
-  image: testimage.jpg
+  image: profile photo 3.jpg
   links:
     - icon: twitter
       text: twitter
-      href: https://twitter.com/akesslerdc
+      href: https://twitter.com/sunset_styles
     - icon: github
       text: Github
-      href: https://github.com/amkessler
+      href: https://github.com/rachelgarton
 ---
 
-Hi, I'm Aaron and I'm a journalist at the AP in Washington, DC. I like data, the ocean and F1 racing. I've got two little ones and enjoy watching them grow up.
+Hi, I'm Rachel and I'm a fourth year student at George Washington University in Washington, DC. I am currently a financial assistant at the Student Org Finance Desk, but I have also completed a marketing internship at the Wilson Center in Wilmington, NC. I love reading, pop culture, and drawing. I plan to pursue an education in publishing post graduation.
 
 ## Education
 
-University of Missouri-Columbia
-
-Columbia University asdfasdfsa
-
-Washington University in St. Louis
+George Washington University - Class of 2023
 
 ## Skills
 
 Reporting and Writing
 
-Data Analysis
+Beginner Data Analysis
 
-FOIA laws
+Adobe Premiere Pro and Premiere Rush
