@@ -2,14 +2,16 @@
 title: "Portfolio"
 ---
 
-Hi there this is my portfolio page!
+Hi there, this is my portfolio page! On this page, I have compiled the best examples from my marketing internship at the Wilson Center, as well as a few assignments from various SMPA/journalism classes.
 
-## Voting Rights Story
+## Social Media Campaign
 
-This [story](https://apnews.com/) from the Associated Press dealt with voting rights issues in Texas in the wake of laws designed to make voting access more difficult.
+This [website](https://rachelhgarton.wixsite.com/socialmediacampaign) is a social media campaign on the mental health benefits of reading. Created for a web design class, this site features social media strategies, curated posts, and data to demonstrate the positives of reading.
 
-[![](https://storage.googleapis.com/afs-prod/media/76b879c7c4d74d46bfc10fa38564184b/1000.webp){fig-alt="This is showing a test image of nothing related to this actual story"}](https://apnews.com/)
+[![](reading.jpeg){fig-alt="aerial shot of lap where a book is opened"}](https://rachelhgarton.wixsite.com/socialmediacampaign)
 
-## Election Night Coverage
+## Profile on Marisol Cabrera
 
-Here is a story that [captured the moment of victory](https://apnews.com/) for candidate TKTK in the 2022 general election.
+The [video](https://www.youtube.com/watch?v=My3LqXoWahU) below is a project shot, edited, and directed by myself that is a feature on GW-TV and member Marisol Cabrera.
+
+[![](Rachel%20+%20me%20at%20shoot.jpg){fig-alt="tv studio"}](https://www.youtube.com/watch?v=My3LqXoWahU)

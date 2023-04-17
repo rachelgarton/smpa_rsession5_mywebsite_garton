@@ -32,7 +32,7 @@
     "href": "portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Hi there this is my portfolio page!"
+    "text": "Hi there, this is my portfolio page! On this page, I have compiled the best examples from my marketing internship at the Wilson Center, as well as a few assignments from various SMPA/journalism classes."
   },
   {
     "objectID": "portfolio.html#voting-rights-story",
@@ -54,5 +54,19 @@
     "title": "More Stuff About Me",
     "section": "",
     "text": "About this site\nHere is some new stuff!\n\n1 + 1 \n\n[1] 2"
+  },
+  {
+    "objectID": "portfolio.html#social-media-campaign",
+    "href": "portfolio.html#social-media-campaign",
+    "title": "Portfolio",
+    "section": "Social Media Campaign",
+    "text": "Social Media Campaign\nThis website is a social media campaign on the mental health benefits of reading. Created for a web design class, this site features social media strategies, curated posts, and data to demonstrate the positives of reading."
+  },
+  {
+    "objectID": "portfolio.html#profile-on-marisol-cabrera",
+    "href": "portfolio.html#profile-on-marisol-cabrera",
+    "title": "Portfolio",
+    "section": "Profile on Marisol Cabrera",
+    "text": "Profile on Marisol Cabrera\nThe video below is a project shot, edited, and directed by myself that is a feature on GW-TV and member Marisol Cabrera."
   }
 ]
