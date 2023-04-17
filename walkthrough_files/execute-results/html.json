@@ -1,0 +1,14 @@
+{
+  "hash": "60477895da5368780fcdda6e1378bfbf",
+  "result": {
+    "markdown": "---\ntitle: \"Analysis Walkthrough Example\"\nauthor: \"Aaron Kessler\"\nformat:\n  html:\n    self-contained: true\n    code-fold: true\n    code-tools: true\n\n---\n\n\nWe'll start by loading. our libraries.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.1     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n:::\n\n```{.r .cell-code}\nlibrary(lubridate)\n```\n:::\n\n\nWe're going to look at some sample data from Texas on housing prices throughout the state.\n\nFirst we'll load data.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# run this line below load the data for this assignment\n# we'll use a built-in dataset from the ggplot2 package (loaded as party of the tidyverse)\nhousesales <- ggplot2::txhousing\n```\n:::\n\n\nNow, let's see what the data looks like\n\n\n::: {.cell}\n\n```{.r .cell-code}\nhousesales %>% \n  head()\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 6 × 9\n  city     year month sales   volume median listings inventory  date\n  <chr>   <int> <int> <dbl>    <dbl>  <dbl>    <dbl>     <dbl> <dbl>\n1 Abilene  2000     1    72  5380000  71400      701       6.3 2000 \n2 Abilene  2000     2    98  6505000  58700      746       6.6 2000.\n3 Abilene  2000     3   130  9285000  58100      784       6.8 2000.\n4 Abilene  2000     4    98  9730000  68600      785       6.9 2000.\n5 Abilene  2000     5   141 10590000  67300      794       6.8 2000.\n6 Abilene  2000     6   156 13910000  66900      780       6.6 2000.\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
