@@ -31,14 +31,13 @@ options(tigris_class = "sf")
 
 A h/t to Sharon Machlis for turning people on to the Mapview package, and her excellent walkthroughs of it.
 
-For the data tonight we'll be using the tidycensus package to pull both census data, as well as geospatial boundaries. 
-Let's quickly review how we use it.
+For the data tonight we'll be using the tidycensus package to pull both census data, as well as geospatial boundaries. Let's quickly review how we use it.
 
 ```{r}
 
 # uncomment to run, then recomment it out so you don't run it every time
 
-census_api_key("2a6f8c21a30d3024e038d67d7d4eba647dc79cd4", overwrite=TRUE)
+census_api_key("2a6f8c21a30d3024e038d67d7d4eba647dc79cd4", overwrite = TRUE)
 
 
 ```
@@ -50,7 +49,6 @@ myvars <- c(totalpop = "B01003_001",
             medage = "B01002_001"
 )
 ```
-
 
 ```{r}
 #pull for NC counties
@@ -98,8 +96,8 @@ mapview(nc_counties_withgeo, zcol = "medincome")
 
 ```
 
-
 Customize colors
+
 ```{r}
 
 mapview(nc_counties_withgeo, zcol = "medincome", 
@@ -109,7 +107,8 @@ mapview(nc_counties_withgeo, zcol = "medincome",
 
 
 ```
-This map’s dark background appeared automatically, because mapview determined the map included a lot of light colors. You can turn off that feature.
+
+This map's dark background appeared automatically, because mapview determined the map included a lot of light colors. You can turn off that feature.
 
 ```{r}
 
@@ -117,7 +116,6 @@ mapviewOptions("basemaps.color.shuffle" = FALSE)
 
 
 ```
-
 
 ```{r}
 
@@ -130,6 +128,7 @@ mapview(nc_counties_withgeo, zcol = "medincome",
 ```
 
 Two maps together
+
 ```{r}
 
 map_income <- mapview(nc_counties_withgeo, zcol = "medincome", 
@@ -143,7 +142,6 @@ map_age <- mapview(nc_counties_withgeo, zcol = "medage",
 
 ```
 
-
 ```{r}
 
 sync(map_income, map_age)
@@ -151,15 +149,16 @@ sync(map_income, map_age)
 
 ```
 
-Side-by-side slider to compare the two, from the leaflet.extras2 package 
+Side-by-side slider to compare the two, from the leaflet.extras2 package
+
 ```{r}
 
 map_income | map_age
 
 
 ```
-To turn off legends, hover text, popups
 
+To turn off legends, hover text, popups
 
 ```{r}
 
@@ -174,6 +173,7 @@ mapview(nc_counties_withgeo, zcol = "medincome",
 ```
 
 Customize labels
+
 ```{r}
 
 mylabel <- glue::glue("{nc_counties_withgeo$NAM} {nc_counties_withgeo$medincome}")
@@ -187,6 +187,7 @@ mapview(nc_counties_withgeo, zcol = "medincome",
 ```
 
 Customize popups
+
 ```{r}
 mypopup <- glue::glue("<strong>{nc_counties_withgeo$NAM}</strong><br />
                       Total Population: {nc_counties_withgeo$totalpop}<br />
@@ -198,13 +199,11 @@ mypopup <- glue::glue("<strong>{nc_counties_withgeo$NAM}</strong><br />
 
 ```
 
-
 ```{r}
 
 head(mypopup)
 
 ```
-
 
 ```{r}
 
@@ -215,20 +214,14 @@ mapview(nc_counties_withgeo, zcol = "medincome",
 
 ```
 
-
 ```{r}
 
 
 
 ```
 
-
 ```{r}
 
 
 
 ```
-
-
-
-
