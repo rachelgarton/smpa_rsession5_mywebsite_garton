@@ -29,10 +29,6 @@ options(tigris_class = "sf")
 
 # Interactive Maps with MapView Package
 
-A h/t to Sharon Machlis for turning people on to the Mapview package, and her excellent walkthroughs of it.
-
-For the data tonight we'll be using the tidycensus package to pull both census data, as well as geospatial boundaries. Let's quickly review how we use it.
-
 ```{r}
 
 # uncomment to run, then recomment it out so you don't run it every time
@@ -86,7 +82,7 @@ colnames(nc_counties_withgeo) <- sub("E$", "", colnames(nc_counties_withgeo)) # 
 nc_counties_withgeo
 ```
 
-Mapping Virginia counties with mapview
+Mapping North Carolina counties with mapview
 
 ```{r}
 
