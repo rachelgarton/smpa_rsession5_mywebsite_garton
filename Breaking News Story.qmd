@@ -1,0 +1,56 @@
+---
+title: "Breaking News Story"
+author: "Rachel Garton"
+---
+Load Packages
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load the packages we'll need
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(writexl)
+library(janitor)
+
+```
+
+Load data
+
+```{r}
+Spotify_Top_Songs <- read.csv("top10s.csv")
+```
+
+Pull data I want
+
+```{r}
+Spotify_Top_Songs %>% 
+  filter(artist == "One Direction")
+```
+
+```{r}
+Spotify_Top_Songs %>% 
+  filter(artist == "One Direction") %>% 
+  summarise(count = n())
+```
+
+```{r}
+Spotify_Top_Songs %>% 
+  filter(artist == "ZAYN") %>% 
+  summarise(count = n())
+```
+
+```{r}
+Spotify_Top_Songs %>% 
+  filter(artist == "Niall Horan") %>% 
+  summarise(count = n())
+```
+
+```{r}
+Spotify_Top_Songs %>% 
+  filter(artist == "Harry Styles") %>% 
+  summarise(count = n())
+``` 
+### One Direction Members Continue to Break Records Even After Break Up
+
+One Direction, formed in 2010 on the hit UK TV show X-Factor, consisted of members Harry Styles, Louis Tomlinson, Niall Horan, Liam Payne, and Zayn Malik. They became instantly popular with their break-out single "What Makes You Beautiful in 2012. In the years between their formation in 2010 and member Zayn Malik leaving the band in 2015, the band would have 7 chart-topping songs. After their break-up, one would suspect that the members would fade into the pop culture oblivion, but the opposite has happened: the members are now topping the chart with their solo music. Zayn Malik, now ZAYN, has 5 singles and 2 features of his own that have made the charts. Members Niall Horan and Harry Styles, who both made their solo debuts in 2017, are beginning to follow in Zayn's steps in topping the Top 10's; Niall Horan currently has 2 songs, This Town and Slow Hands, on the chart, while Harry Styles has 1 with Sign of the Times. 

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Garton">
+
+<title>Rachel’s Website - The Last of Us Walkthrough</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Rachel’s Website</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html">
+ <span class="menu-text">Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./The Last of Us Walkthrough.html" aria-current="page">
+ <span class="menu-text">The Last of Us Walkthrough</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./SMPA_3333_Paper_Example.html">
+ <span class="menu-text">SMPA 3333 Paper Example</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Advanced_News_Writing_Story_Ex.html">
+ <span class="menu-text">Advanced News Writing Story Example</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./mapping.html">
+ <span class="menu-text">Interactive Maps</span></a>
+  </li>  
+  <li class="dropdown-header">
+ <span class="menu-text">Breaking News Story.qmd</span></li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#last-of-us---critic-reviews" id="toc-last-of-us---critic-reviews" class="nav-link active" data-scroll-target="#last-of-us---critic-reviews">Last of Us - Critic Reviews</a>
+  <ul class="collapse">
+  <li><a href="#load-the-data." id="toc-load-the-data." class="nav-link" data-scroll-target="#load-the-data.">Load the data.</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Last of Us Walkthrough</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rachel Garton </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>First, load the packages you need to properly code your data.</p>
+<section id="last-of-us---critic-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="last-of-us---critic-reviews">Last of Us - Critic Reviews</h2>
+<section id="load-the-data." class="level3">
+<h3 class="anchored" data-anchor-id="load-the-data.">Load the data.</h3>
+<p>Run the code below to load the data. It should be a number of metacritic review from the Last of Us release period.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"critic_reviews_g1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, that you’ve loaded the data, you’ll want to figure out what you want to <em>do</em> with the data.</p>
+<p>Let’s say you wanted to start off with reading a review from IGN. To filter only for this review, we will use the filter function “id=IGN”. In doing this, we should get the data solely for that review.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(id <span class="sc">==</span> <span class="st">"IGN"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   id
+1 IGN
+                                                                                                                                                                   review
+1 It’s as much a masterpiece on PS4 as it is on PS3, and it’s worth your undivided attention whether you’ve played it already or are about to jump in for the first time.
+        date score
+1 2014-07-28   100</code></pre>
+</div>
+</div>
+<p>Great, we’ve pulled up the review from IGN. It looks like they gave the game a perfect score. Now that you think of it, you want to figure out who gave The Last of Us its lowest score.</p>
+<p>To do this, we’ll want to arrange the data in assecending order. To sort by the lowest value/score first, we’ll want to use the arrange function followed by “score”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                          id
+1                   Gamer.no
+2                           
+3                   Games.cz
+4             Slant Magazine
+5                  Level7.nu
+6                   GameSpot
+7               Critical Hit
+8               Gaming Nexus
+9                     Cubed3
+10                          
+11                      ZTGD
+12                IGN Italia
+13               Toronto Sun
+14                       XGN
+15              GRYOnline.pl
+16            Hardcore Gamer
+17        Cheat Code Central
+18              The Escapist
+19           Eurogamer Italy
+20               SpazioGames
+21                   USgamer
+22         Metro GameCentral
+23                          
+24               4Players.de
+25                          
+26            Digital Chumps
+27 Merlin'in Kazanı (Turkey)
+28                 Softpedia
+29            InsideGamer.nl
+30                  Gamer.nl
+31                       EGM
+32               GamingTrend
+33      PlayStation Universe
+34                  JeuxActu
+35                     LaPS4
+36                  3DJuegos
+37                    Vandal
+38                Gameplanet
+39            Multiplayer.it
+40                   NZGamer
+41                          
+42                          
+43        Eurogamer Portugal
+44                          
+45                 Telegraph
+46               CalmDownTom
+47           The Digital Fix
+48       Gamereactor Denmark
+49                  DarkZero
+50              Impulsegamer
+51               Push Square
+52               PSX Extreme
+53           Game Revolution
+54             God is a Geek
+55              COGconnected
+56                   LevelUp
+57         Eurogamer Germany
+58      Digitally Downloaded
+59     PlayStation LifeStyle
+60               Digital Spy
+61                Gaming Age
+62               GameOver.gr
+63               Gameblog.fr
+64               DarkStation
+65               Meristation
+66               Everyeye.it
+67                VideoGamer
+68             Game Informer
+69               GamesRadar+
+70                       IGN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     review
+1                                                                                                                                                                                                                                                                                                                                                                                                     Except for the Left Behind DLC, none of the other additions actually add to the experience. The game is just as good as it always has been, but with improved graphics being the only real selling point, the package is not enough for a second buy.
+2                                                                                                                                                                                                                                                                                                                                                                                                                                                          Visual improvements and three included DLCs don’t justify buying this game again, but if you haven’t played it on PS3 yet, you’re in for long hours of valuable entertainment. [Sept 2014, p.59]
+3                                                                                                                                                                                                                                                                                            A dramatic and emotional story of a post-apocalyptic world is mixed with a brutal straightforward shooter, where a number of corpses goes into hundreds. Now with the prettier graphics and more content than ever before. It is a technologically successful remaster for PlayStation 4 owners who do not want to buy the older console just to get one game.
+4                                                                                                                                                                                                                                                                                                                                                      A next-gen playthrough, with the graphical beauty cranked to its highest, and divorced of all other critical noise reveals a game that doesn't break new ground, but very much tries to reach perfection with the tools Naughty Dog and the industry as a whole, really, are all very well aware of.
+5                                                                                                                                                                                                                                                                                                                                                           The Last of Us Remastered is better than the original in every single way, although the improvement doesn’t really enhance the experience all that much. If you have completed it already you can skip this version, but if you’ve missed out the adventure before you’re in a for a big treat.
+6                                                                                                                                                                                                                                                            The Last of Us is a great action game that you should play if you haven't already. And if you have played it before, the improvements here aren't so dramatic as to make the game feel like a new experience, but it is definitely one worth revisiting. In the world of The Last of Us, as in our own world, love might destroy you, but it's also one of the only things worth fighting for.
+7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    One of the games on the PlayStation is now one of the best games on the PlayStation 4.
+8                                                                                                                                                                                                                                                                                                                                                                                                                                   With far too many action segments and repetitive puzzles, this survival action game gets bogged down by filler. Thankfully the strong last act and great chemistry between leads makes this a must-play, warts and all.
+9  A post-apocalyptic road trip that offers a fantastic, riveting experience, where destruction and beauty, and hope and despair, get entwined in a way that’s nothing short of genius, The Last of Us is so good that its somewhat repetitive, and occasionally dull gameplay isn’t enough to rob it of its rightful place amongst the video game greats. Therefore, if looking for an unforgettable action-adventure, with strong cinematic sensibilities, and a heavy emphasis in adult, character-driven storytelling, look no further than Naughty Dog’s classic, especially now that the remastered version has made the original even more stunning.
+10                                                                                                                                                                                                                                                                                                                                                                                                         PlayStation 4 makes The Last of Us look better than ever. The touching storyline, the excellent game design and the beautiful visuals ensure that this last-gen masterpiece is also one of the best entries so-far for the next-gen. [Sept 2014]
+11                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Players who missed this on the PS3 will find a lot to like here, but for those who have already completed it I doubt the graphical upgrade is worth another play through.
+12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Naughty Dog's masterpiece is a must have for every PS4-owner that missed the game one year ago. But if you already met Joel and Ellie on PS3, think twice.
+13                                                                                                                                                                                                                                                      It’s tough to recommend for PS3 players who have already played the game, as the $55 price is a bit steep for some enhanced visuals and a bit of added content. But PlayStation 4 owners who haven’t yet experienced The Last of Us absolutely owe it to themselves to pick up this modern classic, and take a journey with Joel and Ellie across the heartbreakingly beautiful ruins of our world.
+14                                                                                                                                                                                                                                                                                                                                          The Last of Us: Remastered is an enhanced edition of the succesfull game, exclusively for PlayStation 4. The remastered graphics, especially the improved ambiance and lighting, are a great asset to this game and make it a must-have for every PlayStation 4 owner, especially if you haven't played it yet.
+15                                                                                                                                                                                                                                                         The Last of Us for the PS4 is a perfect game for all people who haven't had the opportunity to get acquainted with it before. It's probably the best game available for this piece of hardware - great story, engaging gameplay and impressive technology. But if you know The Last of Us, you have nothing new to look for, except shiny graphics. And that's not really THAT important, is it?
+16                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          This is one of the best console ports in recent history, as it manages to fully capture the spirit of the original while improving upon it in nearly every way.
+17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Simply put, The Last of Us: Remastered is just better than the PS3 version.
+18                                                                                                                                                                                                                                                                                                                                                                                         With its improved detail, better draw distance, and slick 60fps presentation, The Last of Us Remastered is a beautiful update to a beautiful game. It is, however, a re-release of a game that isn't very old to begin with, and that bears taking into account.
+19                                                                                                                                                                                                                                                                                                                                                                                                                                                      After 13 months The Last of Us is still impressive. This Remastered edition is the perfect deal for those who have never played Naughty Dog's game, but it doesn't offer anything more to PS3 fans.
+20                                                                                                                                                                                                                                                                                                                                                                                                        This edition is a must-have only for those who have never had the opportunity to play the game on PS3 and own a PS4. All others can rekindle their old console. Despite this, The Last of Us Remastered is an excellent version of a masterpiece.
+21                                                                                                                                                                                                                                                                                                                                                     There's not really enough distance between the PS3 version of The Last of Us and this new Remaster to make it worth double-dipping, unless you're simply that fixated on counting lines of resolution. If you missed out the first time around, though, you really shouldn't let it slip past again.
+22                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Still a stunning achievement in both storytelling and third person adventure, and although this is the definitive version the differences are still minor.
+23                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            A touch less impactful now, but one of last year's highlights is still of 2014's best games. [Oct 2014, p.61]
+24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us remains a masterpiece. And on PS4 you get the complete story experience on one disc.
+25                                                                                                                                                                                                                                                                                                                                                                                                                                 It's the best version available of what is arguably Playstation 3's best game and The Last Of Us remains every bit as dramatic, powerful and engaging as it was when first released. Still incredible. [Issue#247, p.59]
+26                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us finds a very appropriate home on the PS4.
+27                                                                                                                                                                                                                                                                                                                                                                                                                   The Last of Us: Remastered is a GOTY Edition. But, if you are expecting 'next-gen' graphics, you may be disappointed. After all, you can play The Last of Us with 1080p and 60FPS. It's the most important part of Remastered Edition.
+28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Naughty Dog worked hard to improve the textures seen in the PS3 game, not to mention the character models, the animations, and much more.
+29                                                                                                                                             The Last of Us Remastered honors its own name. It runs more smoothly, is prettier and has more content. The technical improvements and the Photo Mode make sure that The Last of Us comes into its own even more, while Left Behind on PlayStation 3 already proved that downloadable content can be of value. The small imperfections are still here and it’s unfortunate that the PlayStation 4 isn’t pushed to the limit. Despite all this, Remastered is the best version of an already incredible game.
+30                                                                                                                                                                                                                                                                                                                                                        For those who couldn’t wait to play the best PlayStation 3 game on Sony’s newest console, we’ve got some good news: The Last of Us Remastered is beautifully crafted and polished. Remastered is a complete package with touched up graphics, while the game’s core remains as brilliant as ever.
+31                                                                                                                                                                                                       While The Last of Us was one of the PS3’s most impressive, engrossing releases, The Last of Us: Remastered feels like the version of Naughty Dog’s post-apocalyptic story of survival that the developer always intended us to play. Its story and characters are just as strong as they were before, but they’re now reinforced by far more amazing visuals, consistent framerate, and a nice selection of new bonus features and DLC inclusions.
+32                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us is truly the game of a generation, and the Remastered edition brings the harrowing adventure to a whole new generation with expert style.
+33                                                                                                                                                                                                                                                                                                                                                                          Naughty Dog gives PlayStation gamers a second, definitive chance to experience one of the greatest video game stories. The Last of Us Remastered's additional content, visual enhancements, and improved performance leave very little standing in the way of a perfect encore.
+34                                                                                                                                                                                                                                 Do you need to get The Last of Us Remastered? Yes, if you didn't get the opportunity to play this PS3 masterpiece. The game enjoys the power of the PS4 without any trouble in very high resolution. The 60fps argument hits its target too, just like the price tag. But if you've already been there, no need to open your wallet, as this Remastered version doesn't bring anything new enough to put 50 euros on it.
+35                                                                                                                                                                                                                                                                                                                                    A must have for those who couldn't play it on PS3. Intense, violent and emotional, Joel and Ellie's tale is as stunning as a year ago. Visual improvements and extra content are the only incentives those who played the original will find, and the reason they will have to think it's worth buying PS4's version.
+36                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            If you didn't play it on PS3, this is definitely one the best second chances of your life. A must have for adventurers and gamers in general.
+37                                                                                                                                                                                                                                                                                                                                                                                                                                  No matter if on PS3 or on PS4, The Last of Us is an experience you have to live. Obviously, if you have the chance of doing it with an improved version, with better visuals, extras and so on, the choice seems clear.
+38                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us Remastered is a better-looking, better performing version of an already incredible game. As such, those who haven't played the original version should buy immediately, and those that have probably should as well.
+39                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              The remastered edition of The Last of Us is simply perfect.
+40                                                                                                                                                                                                                                                                                                                          What should really sweeten the deal for PS4 owners is the Remastered version of The Last of Us also includes the follow-up downloadable content, such as Ellie’s prequel chapter titled Left Behind. Which easily adds another two or three hours to the length of gameplay and expands on the riveting character developments.
+41                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                One of the best titles of the previous generation is now available in all the next-gen glory and also with all the DLCs. Take it or leave it. [Issue#245]
+42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      For the most part, the mind-blowing experience you remember with true new-gen visuals. No PS4 library is complete without this. [October 2014, p70]
+43                                                                                                                                                                                                                                                                                The Last of Us is one of the easiest games to recommend to any player, from the ones who like to occasionally play to the hardcore that want to explore everything. The release of The Last of Us: Remastered makes its acquisition even more attractive game and remembers those who have not played that it’s not too late to know this landmark in video game history.
+44                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                A refreshed classic that remains as vital as ever thanks to a beautifully crafted port. [Sept 2014, p.99]
+45                                                                                                                                                                                                                                                                                     That the action in The Last of Us stays contextual to its narrative and characters is no mean feat either, no cognitive dissonance here, and the lines between the game and its story are usually non-existent. And it is a fabulous story, riffing on Cormac McCarthy and other bleak post-apocalyptic fiction but keeping its own identity through its characters.
+46                                                                                                                                                                                                                                                                                                                                                                                        Not only is The Last of Us technically brilliant, it has little things that just drag you further into the world. They are by no means important to the progression of the story of the game but the make the character seem more human and less one dimensional.
+47                                                                                                                                                                                                                                                                                                                                                                 The Last Of Us Remastered absolutely deserves a place in your PlayStation 4 collection, despite whether you’ve played it before or not. The improvements this remaster brings only helps to show you how much of an incredible, beautiful, emotional and downright amazing game this is.
+48                                                                                                                                                                                                                                                                                                                                                                                  Even if the Remastered version only really adds improves textures and better framerate, The Last of Us remains one of the greatest games in recent years. It’s a must-have for any PS4 owners who didn’t play the original, and well-worth replaying for those who did.
+49                                                                                                                                                                                                                                                                                                                                                                                                  If you have yet to play The Last of Us, and you own a PlayStation 4, I can fully whole heartily say go buy this game, because you’re in for a memorable time. For fans, this is one you might want to pick up if you want to play the game at its best.
+50                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us Remastered Edition enhances an already perfect game on the PlayStation 3 to something even more powerful on the PS4.
+51                                                                                                                                                                                                                                                                                                                                                                             Of course, the onboard add-on packs and smattering of superfluous extras ensure that this is the definitive edition of an already outstanding affair – but, unsurprisingly, it’s the touching tale at the heart of the package that once again sets it apart from its peers.
+52                                                                                                                                                                                                                                                                                                                                   Saying The Last Of Us: Remastered is an absolute triumph seems redundant. I said it when the original released last year, after all. And yeah, it's basically the same game with a glossier coating and a few additions. But consider: What have we seen in the last 15 months or so that even comes close? Seriously?
+53                                                                                                                                                                                                                                                                                                             While I’d rather not see a sequel, you should know that this Remastered version basically puts a T-ball stand in Sony’s living room where they’ve now started selling bats. Depending on the level of broken the company's biggest Bravia display could become given that scenario, I'd say the brand is worth a lot of money at the moment.
+54                                                                                                                                                                                                                                                                                                                                                                                                    Despite some decent titles on Sony’s new machine, you can’t deny the quality of Naughty Dog’s masterpiece. Even the staunchest of advocates that want original experiences on their new console will struggle to find much wrong with The Last of Us.
+55                                                                                                                                                                                                                                                                                                                                                                                                    Already a masterpiece, an upgraded Last of Us was going to be a win, but with the also brilliant Left Behind included as well as the resurgence of the multiplayer and the bonus featurettes, the remastered version is the best thing out right now.
+56                                                                                                                                                                                                                                                                                                     While it may not seem like much, 1080p resolution and 60 fps are very welcome improvements for a nearly perfect game. Naughty Dog managed to do a flawless technical adaptation for the PlayStation 4. We would have loved a bit more extra content, but we can't complain, as the game already is one of the best ever created for a Sony platform.
+57                                                                                                                                                                                                                                                                                                                                                                                                                                               The heart-rending story isn`t romanticizing nor does it drift into the pathos other, less subtle games so often lean towards. That's the line where good craftsmanship becomes art, and an excellent game.
+58                                                                                                                                                                                                                                                                                                                                                                                                                                                                     In the end I came to the same conclusion now that I did back then: I had fun with the game itself, but it was the narrative that will no doubt be what sticks with me for some time.
+59                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us Remastered is just a perfect game made even more perfect.
+60                                                                                                                                                                                                                                                                                                                                                                                                                                                       It features a superb plot, contains at least one piece of essential DLC and looks absolutely stunning, making it an essential purchase for newcomers and one to consider for fans of the original.
+61                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 As for recommending the game to PS4 owners, it's pretty obviously worth checking out — most definitely for those who skipped out on the PS3 version for whatever reason.
+62                                                                                                                                                                                                                                                                                                                                                                                  The Last of Us remains one of the most important games of the decade. It's a pinnacle in storytelling, an emotional journey and a great game overall. The same goes for the PS4 version, even though it has nothing new to offer besides the upgrade in its resolution.
+63                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us Remastered on PS4 is still the fantastic game it used to be on PS3, with all the DLC and enhanced graphics and animations. If you missed it last year, that's definitely a must-buy.
+64                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Even if you’ve played The Last of Us, owning one of the best games of the last ten years in all its 1080p glory is worth the price of admission.
+65                                                                                                                                                                                                                                                                                                                                                                    The Last of Us: Remastered is a complete GOTY Edition. It includes all DLC for Multiplayer, the amazing Left Behind, extended making of, cinematics commentary track, and more. Graphically, Naughty Dog studio sets a new standard in remasters. A masterpiece and its best version.
+66                                                                                                                                                                                                                                                                                                                                                                                            1080p and 60fps (with rare drops). Better textures and shadows. But in the end, the most exciting part of this masterpiece is still the plot, the emotions and the tears. And one year after its original release, everything is still there to surprise you.
+67                                                                                                                                                                                                                                                                                                       The best version of one of the last generation's best games. Those expecting it to look totally 'next-gen' may be disappointed, as even at its peak it resembles a last-generation game being played at Ultra settings on PC. Still, it's obvious a lot of work and care has gone into this, and it will please both newcomers and old fans alike.
+68                                                                                                                                                                                                                                                Like the best visual updates, Remastered plays like you remember it. If you played 2013's Game of the Year near release and have been dying to return to the dark tale, then this is a great opportunity. If you never played The Last of Us at all, this is absolutely the way to do it. But be careful - you'll never want to go back to the PS3 original again after reveling in all the improvements.
+69                                                                                                                                                                                                                                                                                                                                                                                                                                                     The Last of Us remains a must-play, genre-defining action survival game, and the Remastered version brings with it plentiful tweaks and additional content that make it well worth the asking price.
+70                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  It’s as much a masterpiece on PS4 as it is on PS3, and it’s worth your undivided attention whether you’ve played it already or are about to jump in for the first time.
+         date score
+1  2014-07-30    70
+2  2014-10-22    80
+3  2014-08-18    80
+4  2014-08-17    80
+5  2014-07-29    80
+6  2014-07-28    80
+7  2014-08-01    84
+8  2014-08-13    85
+9  2020-07-28    90
+10 2014-09-05    90
+11 2014-08-18    90
+12 2014-08-04    90
+13 2014-07-31    90
+14 2014-07-31    90
+15 2014-07-31    90
+16 2014-07-30    90
+17 2014-07-29    90
+18 2014-07-28    90
+19 2014-07-28    90
+20 2014-07-28    90
+21 2014-07-28    90
+22 2014-07-28    90
+23 2014-08-24    92
+24 2014-08-04    93
+25 2014-08-21    94
+26 2014-08-01    94
+27 2014-07-28    94
+28 2014-08-22    95
+29 2014-08-20    95
+30 2014-08-20    95
+31 2014-08-06    95
+32 2014-08-04    95
+33 2014-07-31    95
+34 2014-07-31    95
+35 2014-07-29    95
+36 2014-07-28    95
+37 2014-07-28    95
+38 2014-07-28    95
+39 2014-07-28    95
+40 2014-07-30    98
+41 2014-10-13   100
+42 2014-09-19   100
+43 2014-09-05   100
+44 2014-08-26   100
+45 2014-08-15   100
+46 2014-08-15   100
+47 2014-08-08   100
+48 2014-08-06   100
+49 2014-08-04   100
+50 2014-08-04   100
+51 2014-08-03   100
+52 2014-08-02   100
+53 2014-08-01   100
+54 2014-08-01   100
+55 2014-08-01   100
+56 2014-07-30   100
+57 2014-07-30   100
+58 2014-07-30   100
+59 2014-07-30   100
+60 2014-07-30   100
+61 2014-07-29   100
+62 2014-07-29   100
+63 2014-07-28   100
+64 2014-07-28   100
+65 2014-07-28   100
+66 2014-07-28   100
+67 2014-07-28   100
+68 2014-07-28   100
+69 2014-07-28   100
+70 2014-07-28   100</code></pre>
+</div>
+</div>
+<p>It looks like Gamer.no gave The Last of Us the lowest score with a “70”.</p>
+<p>Perhaps from here, you want to figure out who reviewed the game the fastest. In fact, let’s see who reviewed the game after two weeks of it coming out and in ascending order.</p>
+<p>To do this, we combine a bit of both functions we just did. Instead of arranging the data set by score, we now arrange it by date.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(date)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                          id
+1                Gameblog.fr
+2                DarkStation
+3                Meristation
+4                Everyeye.it
+5                 VideoGamer
+6              Game Informer
+7                GamesRadar+
+8                        IGN
+9                   3DJuegos
+10                    Vandal
+11                Gameplanet
+12            Multiplayer.it
+13 Merlin'in Kazanı (Turkey)
+14              The Escapist
+15           Eurogamer Italy
+16               SpazioGames
+17                   USgamer
+18         Metro GameCentral
+19                  GameSpot
+20                Gaming Age
+21               GameOver.gr
+22                     LaPS4
+23        Cheat Code Central
+24                 Level7.nu
+25                   LevelUp
+26         Eurogamer Germany
+27      Digitally Downloaded
+28     PlayStation LifeStyle
+29               Digital Spy
+30                   NZGamer
+31            Hardcore Gamer
+32                  Gamer.no
+33      PlayStation Universe
+34                  JeuxActu
+35               Toronto Sun
+36                       XGN
+37              GRYOnline.pl
+38           Game Revolution
+39             God is a Geek
+40              COGconnected
+41            Digital Chumps
+42              Critical Hit
+43               PSX Extreme
+44               Push Square
+45                  DarkZero
+46              Impulsegamer
+47               GamingTrend
+48               4Players.de
+49                IGN Italia
+50       Gamereactor Denmark
+51                       EGM
+52           The Digital Fix
+53              Gaming Nexus
+54                 Telegraph
+55               CalmDownTom
+56            Slant Magazine
+57                      ZTGD
+58                  Games.cz
+59            InsideGamer.nl
+60                  Gamer.nl
+61                          
+62                 Softpedia
+63                          
+64                          
+65        Eurogamer Portugal
+66                          
+67                          
+68                          
+69                          
+70                    Cubed3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     review
+1                                                                                                                                                                                                                                                                                                                                                                                                                                                       The Last of Us Remastered on PS4 is still the fantastic game it used to be on PS3, with all the DLC and enhanced graphics and animations. If you missed it last year, that's definitely a must-buy.
+2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Even if you’ve played The Last of Us, owning one of the best games of the last ten years in all its 1080p glory is worth the price of admission.
+3                                                                                                                                                                                                                                                                                                                                                                     The Last of Us: Remastered is a complete GOTY Edition. It includes all DLC for Multiplayer, the amazing Left Behind, extended making of, cinematics commentary track, and more. Graphically, Naughty Dog studio sets a new standard in remasters. A masterpiece and its best version.
+4                                                                                                                                                                                                                                                                                                                                                                                             1080p and 60fps (with rare drops). Better textures and shadows. But in the end, the most exciting part of this masterpiece is still the plot, the emotions and the tears. And one year after its original release, everything is still there to surprise you.
+5                                                                                                                                                                                                                                                                                                        The best version of one of the last generation's best games. Those expecting it to look totally 'next-gen' may be disappointed, as even at its peak it resembles a last-generation game being played at Ultra settings on PC. Still, it's obvious a lot of work and care has gone into this, and it will please both newcomers and old fans alike.
+6                                                                                                                                                                                                                                                 Like the best visual updates, Remastered plays like you remember it. If you played 2013's Game of the Year near release and have been dying to return to the dark tale, then this is a great opportunity. If you never played The Last of Us at all, this is absolutely the way to do it. But be careful - you'll never want to go back to the PS3 original again after reveling in all the improvements.
+7                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us remains a must-play, genre-defining action survival game, and the Remastered version brings with it plentiful tweaks and additional content that make it well worth the asking price.
+8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   It’s as much a masterpiece on PS4 as it is on PS3, and it’s worth your undivided attention whether you’ve played it already or are about to jump in for the first time.
+9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             If you didn't play it on PS3, this is definitely one the best second chances of your life. A must have for adventurers and gamers in general.
+10                                                                                                                                                                                                                                                                                                                                                                                                                                  No matter if on PS3 or on PS4, The Last of Us is an experience you have to live. Obviously, if you have the chance of doing it with an improved version, with better visuals, extras and so on, the choice seems clear.
+11                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us Remastered is a better-looking, better performing version of an already incredible game. As such, those who haven't played the original version should buy immediately, and those that have probably should as well.
+12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              The remastered edition of The Last of Us is simply perfect.
+13                                                                                                                                                                                                                                                                                                                                                                                                                   The Last of Us: Remastered is a GOTY Edition. But, if you are expecting 'next-gen' graphics, you may be disappointed. After all, you can play The Last of Us with 1080p and 60FPS. It's the most important part of Remastered Edition.
+14                                                                                                                                                                                                                                                                                                                                                                                         With its improved detail, better draw distance, and slick 60fps presentation, The Last of Us Remastered is a beautiful update to a beautiful game. It is, however, a re-release of a game that isn't very old to begin with, and that bears taking into account.
+15                                                                                                                                                                                                                                                                                                                                                                                                                                                      After 13 months The Last of Us is still impressive. This Remastered edition is the perfect deal for those who have never played Naughty Dog's game, but it doesn't offer anything more to PS3 fans.
+16                                                                                                                                                                                                                                                                                                                                                                                                        This edition is a must-have only for those who have never had the opportunity to play the game on PS3 and own a PS4. All others can rekindle their old console. Despite this, The Last of Us Remastered is an excellent version of a masterpiece.
+17                                                                                                                                                                                                                                                                                                                                                     There's not really enough distance between the PS3 version of The Last of Us and this new Remaster to make it worth double-dipping, unless you're simply that fixated on counting lines of resolution. If you missed out the first time around, though, you really shouldn't let it slip past again.
+18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Still a stunning achievement in both storytelling and third person adventure, and although this is the definitive version the differences are still minor.
+19                                                                                                                                                                                                                                                           The Last of Us is a great action game that you should play if you haven't already. And if you have played it before, the improvements here aren't so dramatic as to make the game feel like a new experience, but it is definitely one worth revisiting. In the world of The Last of Us, as in our own world, love might destroy you, but it's also one of the only things worth fighting for.
+20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 As for recommending the game to PS4 owners, it's pretty obviously worth checking out — most definitely for those who skipped out on the PS3 version for whatever reason.
+21                                                                                                                                                                                                                                                                                                                                                                                  The Last of Us remains one of the most important games of the decade. It's a pinnacle in storytelling, an emotional journey and a great game overall. The same goes for the PS4 version, even though it has nothing new to offer besides the upgrade in its resolution.
+22                                                                                                                                                                                                                                                                                                                                    A must have for those who couldn't play it on PS3. Intense, violent and emotional, Joel and Ellie's tale is as stunning as a year ago. Visual improvements and extra content are the only incentives those who played the original will find, and the reason they will have to think it's worth buying PS4's version.
+23                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Simply put, The Last of Us: Remastered is just better than the PS3 version.
+24                                                                                                                                                                                                                                                                                                                                                          The Last of Us Remastered is better than the original in every single way, although the improvement doesn’t really enhance the experience all that much. If you have completed it already you can skip this version, but if you’ve missed out the adventure before you’re in a for a big treat.
+25                                                                                                                                                                                                                                                                                                     While it may not seem like much, 1080p resolution and 60 fps are very welcome improvements for a nearly perfect game. Naughty Dog managed to do a flawless technical adaptation for the PlayStation 4. We would have loved a bit more extra content, but we can't complain, as the game already is one of the best ever created for a Sony platform.
+26                                                                                                                                                                                                                                                                                                                                                                                                                                               The heart-rending story isn`t romanticizing nor does it drift into the pathos other, less subtle games so often lean towards. That's the line where good craftsmanship becomes art, and an excellent game.
+27                                                                                                                                                                                                                                                                                                                                                                                                                                                                     In the end I came to the same conclusion now that I did back then: I had fun with the game itself, but it was the narrative that will no doubt be what sticks with me for some time.
+28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us Remastered is just a perfect game made even more perfect.
+29                                                                                                                                                                                                                                                                                                                                                                                                                                                       It features a superb plot, contains at least one piece of essential DLC and looks absolutely stunning, making it an essential purchase for newcomers and one to consider for fans of the original.
+30                                                                                                                                                                                                                                                                                                                          What should really sweeten the deal for PS4 owners is the Remastered version of The Last of Us also includes the follow-up downloadable content, such as Ellie’s prequel chapter titled Left Behind. Which easily adds another two or three hours to the length of gameplay and expands on the riveting character developments.
+31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          This is one of the best console ports in recent history, as it manages to fully capture the spirit of the original while improving upon it in nearly every way.
+32                                                                                                                                                                                                                                                                                                                                                                                                    Except for the Left Behind DLC, none of the other additions actually add to the experience. The game is just as good as it always has been, but with improved graphics being the only real selling point, the package is not enough for a second buy.
+33                                                                                                                                                                                                                                                                                                                                                                          Naughty Dog gives PlayStation gamers a second, definitive chance to experience one of the greatest video game stories. The Last of Us Remastered's additional content, visual enhancements, and improved performance leave very little standing in the way of a perfect encore.
+34                                                                                                                                                                                                                                 Do you need to get The Last of Us Remastered? Yes, if you didn't get the opportunity to play this PS3 masterpiece. The game enjoys the power of the PS4 without any trouble in very high resolution. The 60fps argument hits its target too, just like the price tag. But if you've already been there, no need to open your wallet, as this Remastered version doesn't bring anything new enough to put 50 euros on it.
+35                                                                                                                                                                                                                                                      It’s tough to recommend for PS3 players who have already played the game, as the $55 price is a bit steep for some enhanced visuals and a bit of added content. But PlayStation 4 owners who haven’t yet experienced The Last of Us absolutely owe it to themselves to pick up this modern classic, and take a journey with Joel and Ellie across the heartbreakingly beautiful ruins of our world.
+36                                                                                                                                                                                                                                                                                                                                          The Last of Us: Remastered is an enhanced edition of the succesfull game, exclusively for PlayStation 4. The remastered graphics, especially the improved ambiance and lighting, are a great asset to this game and make it a must-have for every PlayStation 4 owner, especially if you haven't played it yet.
+37                                                                                                                                                                                                                                                         The Last of Us for the PS4 is a perfect game for all people who haven't had the opportunity to get acquainted with it before. It's probably the best game available for this piece of hardware - great story, engaging gameplay and impressive technology. But if you know The Last of Us, you have nothing new to look for, except shiny graphics. And that's not really THAT important, is it?
+38                                                                                                                                                                                                                                                                                                             While I’d rather not see a sequel, you should know that this Remastered version basically puts a T-ball stand in Sony’s living room where they’ve now started selling bats. Depending on the level of broken the company's biggest Bravia display could become given that scenario, I'd say the brand is worth a lot of money at the moment.
+39                                                                                                                                                                                                                                                                                                                                                                                                    Despite some decent titles on Sony’s new machine, you can’t deny the quality of Naughty Dog’s masterpiece. Even the staunchest of advocates that want original experiences on their new console will struggle to find much wrong with The Last of Us.
+40                                                                                                                                                                                                                                                                                                                                                                                                    Already a masterpiece, an upgraded Last of Us was going to be a win, but with the also brilliant Left Behind included as well as the resurgence of the multiplayer and the bonus featurettes, the remastered version is the best thing out right now.
+41                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us finds a very appropriate home on the PS4.
+42                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   One of the games on the PlayStation is now one of the best games on the PlayStation 4.
+43                                                                                                                                                                                                                                                                                                                                   Saying The Last Of Us: Remastered is an absolute triumph seems redundant. I said it when the original released last year, after all. And yeah, it's basically the same game with a glossier coating and a few additions. But consider: What have we seen in the last 15 months or so that even comes close? Seriously?
+44                                                                                                                                                                                                                                                                                                                                                                             Of course, the onboard add-on packs and smattering of superfluous extras ensure that this is the definitive edition of an already outstanding affair – but, unsurprisingly, it’s the touching tale at the heart of the package that once again sets it apart from its peers.
+45                                                                                                                                                                                                                                                                                                                                                                                                  If you have yet to play The Last of Us, and you own a PlayStation 4, I can fully whole heartily say go buy this game, because you’re in for a memorable time. For fans, this is one you might want to pick up if you want to play the game at its best.
+46                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us Remastered Edition enhances an already perfect game on the PlayStation 3 to something even more powerful on the PS4.
+47                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 The Last of Us is truly the game of a generation, and the Remastered edition brings the harrowing adventure to a whole new generation with expert style.
+48                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      The Last of Us remains a masterpiece. And on PS4 you get the complete story experience on one disc.
+49                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Naughty Dog's masterpiece is a must have for every PS4-owner that missed the game one year ago. But if you already met Joel and Ellie on PS3, think twice.
+50                                                                                                                                                                                                                                                                                                                                                                                  Even if the Remastered version only really adds improves textures and better framerate, The Last of Us remains one of the greatest games in recent years. It’s a must-have for any PS4 owners who didn’t play the original, and well-worth replaying for those who did.
+51                                                                                                                                                                                                       While The Last of Us was one of the PS3’s most impressive, engrossing releases, The Last of Us: Remastered feels like the version of Naughty Dog’s post-apocalyptic story of survival that the developer always intended us to play. Its story and characters are just as strong as they were before, but they’re now reinforced by far more amazing visuals, consistent framerate, and a nice selection of new bonus features and DLC inclusions.
+52                                                                                                                                                                                                                                                                                                                                                                 The Last Of Us Remastered absolutely deserves a place in your PlayStation 4 collection, despite whether you’ve played it before or not. The improvements this remaster brings only helps to show you how much of an incredible, beautiful, emotional and downright amazing game this is.
+53                                                                                                                                                                                                                                                                                                                                                                                                                                  With far too many action segments and repetitive puzzles, this survival action game gets bogged down by filler. Thankfully the strong last act and great chemistry between leads makes this a must-play, warts and all.
+54                                                                                                                                                                                                                                                                                     That the action in The Last of Us stays contextual to its narrative and characters is no mean feat either, no cognitive dissonance here, and the lines between the game and its story are usually non-existent. And it is a fabulous story, riffing on Cormac McCarthy and other bleak post-apocalyptic fiction but keeping its own identity through its characters.
+55                                                                                                                                                                                                                                                                                                                                                                                        Not only is The Last of Us technically brilliant, it has little things that just drag you further into the world. They are by no means important to the progression of the story of the game but the make the character seem more human and less one dimensional.
+56                                                                                                                                                                                                                                                                                                                                                     A next-gen playthrough, with the graphical beauty cranked to its highest, and divorced of all other critical noise reveals a game that doesn't break new ground, but very much tries to reach perfection with the tools Naughty Dog and the industry as a whole, really, are all very well aware of.
+57                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Players who missed this on the PS3 will find a lot to like here, but for those who have already completed it I doubt the graphical upgrade is worth another play through.
+58                                                                                                                                                                                                                                                                                           A dramatic and emotional story of a post-apocalyptic world is mixed with a brutal straightforward shooter, where a number of corpses goes into hundreds. Now with the prettier graphics and more content than ever before. It is a technologically successful remaster for PlayStation 4 owners who do not want to buy the older console just to get one game.
+59                                                                                                                                             The Last of Us Remastered honors its own name. It runs more smoothly, is prettier and has more content. The technical improvements and the Photo Mode make sure that The Last of Us comes into its own even more, while Left Behind on PlayStation 3 already proved that downloadable content can be of value. The small imperfections are still here and it’s unfortunate that the PlayStation 4 isn’t pushed to the limit. Despite all this, Remastered is the best version of an already incredible game.
+60                                                                                                                                                                                                                                                                                                                                                        For those who couldn’t wait to play the best PlayStation 3 game on Sony’s newest console, we’ve got some good news: The Last of Us Remastered is beautifully crafted and polished. Remastered is a complete package with touched up graphics, while the game’s core remains as brilliant as ever.
+61                                                                                                                                                                                                                                                                                                                                                                                                                                 It's the best version available of what is arguably Playstation 3's best game and The Last Of Us remains every bit as dramatic, powerful and engaging as it was when first released. Still incredible. [Issue#247, p.59]
+62                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Naughty Dog worked hard to improve the textures seen in the PS3 game, not to mention the character models, the animations, and much more.
+63                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            A touch less impactful now, but one of last year's highlights is still of 2014's best games. [Oct 2014, p.61]
+64                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                A refreshed classic that remains as vital as ever thanks to a beautifully crafted port. [Sept 2014, p.99]
+65                                                                                                                                                                                                                                                                                The Last of Us is one of the easiest games to recommend to any player, from the ones who like to occasionally play to the hardcore that want to explore everything. The release of The Last of Us: Remastered makes its acquisition even more attractive game and remembers those who have not played that it’s not too late to know this landmark in video game history.
+66                                                                                                                                                                                                                                                                                                                                                                                                         PlayStation 4 makes The Last of Us look better than ever. The touching storyline, the excellent game design and the beautiful visuals ensure that this last-gen masterpiece is also one of the best entries so-far for the next-gen. [Sept 2014]
+67                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      For the most part, the mind-blowing experience you remember with true new-gen visuals. No PS4 library is complete without this. [October 2014, p70]
+68                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                One of the best titles of the previous generation is now available in all the next-gen glory and also with all the DLCs. Take it or leave it. [Issue#245]
+69                                                                                                                                                                                                                                                                                                                                                                                                                                                         Visual improvements and three included DLCs don’t justify buying this game again, but if you haven’t played it on PS3 yet, you’re in for long hours of valuable entertainment. [Sept 2014, p.59]
+70 A post-apocalyptic road trip that offers a fantastic, riveting experience, where destruction and beauty, and hope and despair, get entwined in a way that’s nothing short of genius, The Last of Us is so good that its somewhat repetitive, and occasionally dull gameplay isn’t enough to rob it of its rightful place amongst the video game greats. Therefore, if looking for an unforgettable action-adventure, with strong cinematic sensibilities, and a heavy emphasis in adult, character-driven storytelling, look no further than Naughty Dog’s classic, especially now that the remastered version has made the original even more stunning.
+         date score
+1  2014-07-28   100
+2  2014-07-28   100
+3  2014-07-28   100
+4  2014-07-28   100
+5  2014-07-28   100
+6  2014-07-28   100
+7  2014-07-28   100
+8  2014-07-28   100
+9  2014-07-28    95
+10 2014-07-28    95
+11 2014-07-28    95
+12 2014-07-28    95
+13 2014-07-28    94
+14 2014-07-28    90
+15 2014-07-28    90
+16 2014-07-28    90
+17 2014-07-28    90
+18 2014-07-28    90
+19 2014-07-28    80
+20 2014-07-29   100
+21 2014-07-29   100
+22 2014-07-29    95
+23 2014-07-29    90
+24 2014-07-29    80
+25 2014-07-30   100
+26 2014-07-30   100
+27 2014-07-30   100
+28 2014-07-30   100
+29 2014-07-30   100
+30 2014-07-30    98
+31 2014-07-30    90
+32 2014-07-30    70
+33 2014-07-31    95
+34 2014-07-31    95
+35 2014-07-31    90
+36 2014-07-31    90
+37 2014-07-31    90
+38 2014-08-01   100
+39 2014-08-01   100
+40 2014-08-01   100
+41 2014-08-01    94
+42 2014-08-01    84
+43 2014-08-02   100
+44 2014-08-03   100
+45 2014-08-04   100
+46 2014-08-04   100
+47 2014-08-04    95
+48 2014-08-04    93
+49 2014-08-04    90
+50 2014-08-06   100
+51 2014-08-06    95
+52 2014-08-08   100
+53 2014-08-13    85
+54 2014-08-15   100
+55 2014-08-15   100
+56 2014-08-17    80
+57 2014-08-18    90
+58 2014-08-18    80
+59 2014-08-20    95
+60 2014-08-20    95
+61 2014-08-21    94
+62 2014-08-22    95
+63 2014-08-24    92
+64 2014-08-26   100
+65 2014-09-05   100
+66 2014-09-05    90
+67 2014-09-19   100
+68 2014-10-13   100
+69 2014-10-22    80
+70 2020-07-28    90</code></pre>
+</div>
+</div>
+<p>Now we know who were the first people to review the game. From here, we’ll want to filter who would have reviewed the game before August 2014. To do this, we now filter for the month of July.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(date) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(date <span class="sc">==</span> <span class="st">"2014-07-28"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                          id
+1                Gameblog.fr
+2                DarkStation
+3                Meristation
+4                Everyeye.it
+5                 VideoGamer
+6              Game Informer
+7                GamesRadar+
+8                        IGN
+9                   3DJuegos
+10                    Vandal
+11                Gameplanet
+12            Multiplayer.it
+13 Merlin'in Kazanı (Turkey)
+14              The Escapist
+15           Eurogamer Italy
+16               SpazioGames
+17                   USgamer
+18         Metro GameCentral
+19                  GameSpot
+                                                                                                                                                                                                                                                                                                                                                                                                      review
+1                                                                                                                                                                                                        The Last of Us Remastered on PS4 is still the fantastic game it used to be on PS3, with all the DLC and enhanced graphics and animations. If you missed it last year, that's definitely a must-buy.
+2                                                                                                                                                                                                                                                           Even if you’ve played The Last of Us, owning one of the best games of the last ten years in all its 1080p glory is worth the price of admission.
+3                                                                                                                      The Last of Us: Remastered is a complete GOTY Edition. It includes all DLC for Multiplayer, the amazing Left Behind, extended making of, cinematics commentary track, and more. Graphically, Naughty Dog studio sets a new standard in remasters. A masterpiece and its best version.
+4                                                                                                                                              1080p and 60fps (with rare drops). Better textures and shadows. But in the end, the most exciting part of this masterpiece is still the plot, the emotions and the tears. And one year after its original release, everything is still there to surprise you.
+5                                                         The best version of one of the last generation's best games. Those expecting it to look totally 'next-gen' may be disappointed, as even at its peak it resembles a last-generation game being played at Ultra settings on PC. Still, it's obvious a lot of work and care has gone into this, and it will please both newcomers and old fans alike.
+6  Like the best visual updates, Remastered plays like you remember it. If you played 2013's Game of the Year near release and have been dying to return to the dark tale, then this is a great opportunity. If you never played The Last of Us at all, this is absolutely the way to do it. But be careful - you'll never want to go back to the PS3 original again after reveling in all the improvements.
+7                                                                                                                                                                                                       The Last of Us remains a must-play, genre-defining action survival game, and the Remastered version brings with it plentiful tweaks and additional content that make it well worth the asking price.
+8                                                                                                                                                                                                                                    It’s as much a masterpiece on PS4 as it is on PS3, and it’s worth your undivided attention whether you’ve played it already or are about to jump in for the first time.
+9                                                                                                                                                                                                                                                              If you didn't play it on PS3, this is definitely one the best second chances of your life. A must have for adventurers and gamers in general.
+10                                                                                                                                                                                   No matter if on PS3 or on PS4, The Last of Us is an experience you have to live. Obviously, if you have the chance of doing it with an improved version, with better visuals, extras and so on, the choice seems clear.
+11                                                                                                                                                                       The Last of Us Remastered is a better-looking, better performing version of an already incredible game. As such, those who haven't played the original version should buy immediately, and those that have probably should as well.
+12                                                                                                                                                                                                                                                                                                                                               The remastered edition of The Last of Us is simply perfect.
+13                                                                                                                                                                    The Last of Us: Remastered is a GOTY Edition. But, if you are expecting 'next-gen' graphics, you may be disappointed. After all, you can play The Last of Us with 1080p and 60FPS. It's the most important part of Remastered Edition.
+14                                                                                                                                          With its improved detail, better draw distance, and slick 60fps presentation, The Last of Us Remastered is a beautiful update to a beautiful game. It is, however, a re-release of a game that isn't very old to begin with, and that bears taking into account.
+15                                                                                                                                                                                                       After 13 months The Last of Us is still impressive. This Remastered edition is the perfect deal for those who have never played Naughty Dog's game, but it doesn't offer anything more to PS3 fans.
+16                                                                                                                                                         This edition is a must-have only for those who have never had the opportunity to play the game on PS3 and own a PS4. All others can rekindle their old console. Despite this, The Last of Us Remastered is an excellent version of a masterpiece.
+17                                                                                                      There's not really enough distance between the PS3 version of The Last of Us and this new Remaster to make it worth double-dipping, unless you're simply that fixated on counting lines of resolution. If you missed out the first time around, though, you really shouldn't let it slip past again.
+18                                                                                                                                                                                                                                                Still a stunning achievement in both storytelling and third person adventure, and although this is the definitive version the differences are still minor.
+19            The Last of Us is a great action game that you should play if you haven't already. And if you have played it before, the improvements here aren't so dramatic as to make the game feel like a new experience, but it is definitely one worth revisiting. In the world of The Last of Us, as in our own world, love might destroy you, but it's also one of the only things worth fighting for.
+         date score
+1  2014-07-28   100
+2  2014-07-28   100
+3  2014-07-28   100
+4  2014-07-28   100
+5  2014-07-28   100
+6  2014-07-28   100
+7  2014-07-28   100
+8  2014-07-28   100
+9  2014-07-28    95
+10 2014-07-28    95
+11 2014-07-28    95
+12 2014-07-28    95
+13 2014-07-28    94
+14 2014-07-28    90
+15 2014-07-28    90
+16 2014-07-28    90
+17 2014-07-28    90
+18 2014-07-28    90
+19 2014-07-28    80</code></pre>
+</div>
+</div>
+<p>Cool, now we know of the 71 original reviews, 19 of them came two weeks after the game came out. Let’s say the next thing you want to know, specifically from the reviews on July 28, is how many of them gave the movie a perfect score.</p>
+<p>There are a couple ways to go about this, but let’s start with one that pulls from our original data set.</p>
+<p>First, we’ll want to use the group_by function to pull from the July 28 date.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date <span class="sc">==</span> <span class="st">"2014-07-28"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 70 × 5
+# Groups:   date == "2014-07-28" [2]
+   id                   review                date  score `date == "2014-07-28"`
+   &lt;chr&gt;                &lt;chr&gt;                 &lt;chr&gt; &lt;int&gt; &lt;lgl&gt;                 
+ 1 "Cubed3"             A post-apocalyptic r… 2020…    90 FALSE                 
+ 2 ""                   Visual improvements … 2014…    80 FALSE                 
+ 3 ""                   One of the best titl… 2014…   100 FALSE                 
+ 4 ""                   For the most part, t… 2014…   100 FALSE                 
+ 5 "Eurogamer Portugal" The Last of Us is on… 2014…   100 FALSE                 
+ 6 ""                   PlayStation 4 makes … 2014…    90 FALSE                 
+ 7 ""                   A refreshed classic … 2014…   100 FALSE                 
+ 8 ""                   A touch less impactf… 2014…    92 FALSE                 
+ 9 "Softpedia"          Naughty Dog worked h… 2014…    95 FALSE                 
+10 ""                   It's the best versio… 2014…    94 FALSE                 
+# ℹ 60 more rows</code></pre>
+</div>
+</div>
+<p>From there, we’ll filter for how many get a score of 100.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date <span class="sc">==</span> <span class="st">"2014-07-28"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(score <span class="sc">==</span> <span class="st">"100"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 30 × 5
+# Groups:   date == "2014-07-28" [2]
+   id                    review               date  score `date == "2014-07-28"`
+   &lt;chr&gt;                 &lt;chr&gt;                &lt;chr&gt; &lt;int&gt; &lt;lgl&gt;                 
+ 1 ""                    One of the best tit… 2014…   100 FALSE                 
+ 2 ""                    For the most part, … 2014…   100 FALSE                 
+ 3 "Eurogamer Portugal"  The Last of Us is o… 2014…   100 FALSE                 
+ 4 ""                    A refreshed classic… 2014…   100 FALSE                 
+ 5 "Telegraph"           That the action in … 2014…   100 FALSE                 
+ 6 "CalmDownTom"         Not only is The Las… 2014…   100 FALSE                 
+ 7 "The Digital Fix"     The Last Of Us Rema… 2014…   100 FALSE                 
+ 8 "Gamereactor Denmark" Even if the Remaste… 2014…   100 FALSE                 
+ 9 "DarkZero"            If you have yet to … 2014…   100 FALSE                 
+10 "Impulsegamer"        The Last of Us Rema… 2014…   100 FALSE                 
+# ℹ 20 more rows</code></pre>
+</div>
+</div>
+<p>Finally, we’ll put it all together so that r can count how many of the July 28 reviews got a perfect score.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>last_of_us_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date <span class="sc">==</span> <span class="st">"2014-07-28"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(score <span class="sc">==</span> <span class="st">"100"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  `date == "2014-07-28"` count
+  &lt;lgl&gt;                  &lt;int&gt;
+1 FALSE                     22
+2 TRUE                       8</code></pre>
+</div>
+</div>
+<p>It looks like 8 of the reviews got a perfect score.</p>
+<p>Our other option involves creating a new data set to get the exact same information. Let’s start off by creating a new data set.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>July_28_reviews <span class="ot">&lt;-</span> last_of_us_reviews <span class="sc">%&gt;%</span> <span class="fu">filter</span>(date <span class="sc">==</span> <span class="st">"2014-07-28"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now that that’s done, let’s do the same thing from before, but just filter by how many got a score of 100.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>July_28_reviews <span class="sc">%&gt;%</span> </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(score <span class="sc">==</span> <span class="st">"100"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  count
+1     8</code></pre>
+</div>
+</div>
+<p>And we got 8 again.</p>
+<p>Now you know the basics of filtering and sorting!</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2023, Rachel Garton</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rachelgarton">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
